@@ -425,6 +425,11 @@ jobs:
           -no-feature-ftp \
           -no-feature-dom \
           -no-feature-whatsthis \
+          -no-feature-calendarwidget \
+          -no-feature-mdiarea \
+          -no-feature-splashscreen \
+          -no-feature-syntaxhighlighter \
+          -no-feature-tuiotouch \
           -static \
           -dbus-runtime \
           -openssl-linked \
