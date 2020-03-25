@@ -32,7 +32,7 @@ jobs:
       CMAKE_VER: "3.16.3"
       UPLOAD_ARTIFACT: "false"
       ONLY_CACHE: "false"
-      MANUAL_CACHING: "7"
+      MANUAL_CACHING: "8"
       DOC_PATH: "docs/building-cmake.md"
       AUTO_CACHING: "1"
 
@@ -430,6 +430,14 @@ jobs:
           -no-feature-splashscreen \
           -no-feature-tuiotouch \
           -no-feature-lcdnumber \
+          -no-feature-commandlinkbutton \
+          -no-feature-dockwidget \
+          -no-feature-formlayout \
+          -no-feature-sizegrip \
+          -no-feature-stackedwidget \
+          -no-feature-textbrowser \
+          -no-feature-progressdialog \
+          -no-feature-columnview \
           -static \
           -dbus-runtime \
           -openssl-linked \

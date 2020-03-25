@@ -429,6 +429,14 @@ jobs:
           -no-feature-splashscreen \
           -no-feature-tuiotouch \
           -no-feature-lcdnumber \
+          -no-feature-commandlinkbutton \
+          -no-feature-dockwidget \
+          -no-feature-formlayout \
+          -no-feature-sizegrip \
+          -no-feature-stackedwidget \
+          -no-feature-textbrowser \
+          -no-feature-progressdialog \
+          -no-feature-columnview \
           -securetransport \
           -nomake examples \
           -nomake tests \
