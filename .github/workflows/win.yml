@@ -312,10 +312,7 @@ jobs:
           -no-feature-mdiarea ^
           -no-feature-splashscreen ^
           -no-feature-tuiotouch ^
-          -no-feature-pdf ^
-          -no-feature-printer ^
           -no-feature-lcdnumber ^
-          -no-feature-fontdialog ^
           -openssl-linked ^
           OPENSSL_LIBS_DEBUG="%SSL%\out32.dbg\libssl.lib %SSL%\out32.dbg\%LIBS%" ^
           OPENSSL_LIBS_RELEASE="%SSL%\out32\libssl.lib %SSL%\out32\%LIBS%" ^
