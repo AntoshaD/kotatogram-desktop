@@ -315,12 +315,9 @@ jobs:
           -no-feature-lcdnumber ^
           -no-feature-commandlinkbutton ^
           -no-feature-dockwidget ^
-          -no-feature-formlayout ^
           -no-feature-sizegrip ^
-          -no-feature-stackedwidget ^
           -no-feature-textbrowser ^
           -no-feature-progressdialog ^
-          -no-feature-columnview ^
           -openssl-linked ^
           OPENSSL_LIBS_DEBUG="%SSL%\out32.dbg\libssl.lib %SSL%\out32.dbg\%LIBS%" ^
           OPENSSL_LIBS_RELEASE="%SSL%\out32\libssl.lib %SSL%\out32\%LIBS%" ^
