@@ -428,13 +428,10 @@ jobs:
           -no-feature-mdiarea \
           -no-feature-splashscreen \
           -no-feature-tuiotouch \
-          -no-feature-printpreviewwidget \
-          -no-feature-printdialog \
-          -no-feature-printpreviewdialog \
-          -no-feature-cups \
           -no-feature-pdf \
           -no-feature-printer \
           -no-feature-lcdnumber \
+          -no-feature-fontdialog \
           -securetransport \
           -nomake examples \
           -nomake tests \
