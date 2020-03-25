@@ -311,7 +311,6 @@ jobs:
           -no-feature-calendarwidget ^
           -no-feature-mdiarea ^
           -no-feature-splashscreen ^
-          -no-feature-syntaxhighlighter ^
           -no-feature-tuiotouch ^
           -openssl-linked ^
           OPENSSL_LIBS_DEBUG="%SSL%\out32.dbg\libssl.lib %SSL%\out32.dbg\%LIBS%" ^

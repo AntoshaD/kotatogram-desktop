@@ -427,7 +427,6 @@ jobs:
           -no-feature-calendarwidget \
           -no-feature-mdiarea \
           -no-feature-splashscreen \
-          -no-feature-syntaxhighlighter \
           -no-feature-tuiotouch \
           -securetransport \
           -nomake examples \
