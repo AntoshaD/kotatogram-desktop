@@ -314,9 +314,6 @@ jobs:
           -no-feature-tuiotouch ^
           -no-feature-lcdnumber ^
           -no-feature-commandlinkbutton ^
-          -no-feature-dockwidget ^
-          -no-feature-sizegrip ^
-          -no-feature-textbrowser ^
           -no-feature-progressdialog ^
           -openssl-linked ^
           OPENSSL_LIBS_DEBUG="%SSL%\out32.dbg\libssl.lib %SSL%\out32.dbg\%LIBS%" ^

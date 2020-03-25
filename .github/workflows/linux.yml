@@ -431,9 +431,6 @@ jobs:
           -no-feature-tuiotouch \
           -no-feature-lcdnumber \
           -no-feature-commandlinkbutton \
-          -no-feature-dockwidget \
-          -no-feature-sizegrip \
-          -no-feature-textbrowser \
           -no-feature-progressdialog \
           -static \
           -dbus-runtime \
