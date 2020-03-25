@@ -32,7 +32,7 @@ jobs:
       CMAKE_VER: "3.16.3"
       UPLOAD_ARTIFACT: "false"
       ONLY_CACHE: "false"
-      MANUAL_CACHING: "6"
+      MANUAL_CACHING: "7"
       DOC_PATH: "docs/building-cmake.md"
       AUTO_CACHING: "1"
 
@@ -429,6 +429,13 @@ jobs:
           -no-feature-mdiarea \
           -no-feature-splashscreen \
           -no-feature-tuiotouch \
+          -no-feature-printpreviewwidget \
+          -no-feature-printdialog \
+          -no-feature-printpreviewdialog \
+          -no-feature-cups \
+          -no-feature-pdf \
+          -no-feature-printer \
+          -no-feature-lcdnumber \
           -static \
           -dbus-runtime \
           -openssl-linked \
