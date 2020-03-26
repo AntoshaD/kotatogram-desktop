@@ -429,9 +429,6 @@ jobs:
           -no-feature-splashscreen \
           -no-feature-tuiotouch \
           -no-feature-lcdnumber \
-          -no-feature-dockwidget \
-          -no-feature-sizegrip \
-          -no-feature-textbrowser \
           -securetransport \
           -nomake examples \
           -nomake tests \
