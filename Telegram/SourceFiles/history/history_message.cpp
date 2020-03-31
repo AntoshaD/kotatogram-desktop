@@ -443,13 +443,25 @@ HistoryMessage::HistoryMessage(
 
 	createComponents(config);
 
-	if (const auto media = data.vmedia()) {
-		setMedia(*media);
+UserId from = data.vfrom_id().value_or_empty();
+	PeerData* pd = from ? history->owner().user(from) : history->peer;
+	if (pd->isUser() && pd->asUser()->isBlocked()) {
+		setText({
+			TextUtilities::Clean(qs("The message from blocked user")),
+			Api::EntitiesFromMTP(data.ventities().value_or_empty())
+			});
 	}
-	setText({
-		TextUtilities::Clean(qs(data.vmessage())),
-		Api::EntitiesFromMTP(data.ventities().value_or_empty())
-	});
+	else {
+		// оригинальные строки 442-448:
+		if (const auto media = data.vmedia()) {
+			setMedia(*media);
+		}
+		setText({
+			TextUtilities::Clean(qs(data.vmessage())),
+			Api::EntitiesFromMTP(data.ventities().value_or_empty())
+			});
+	}
+
 	if (const auto groupedId = data.vgrouped_id()) {
 		setGroupId(
 			MessageGroupId::FromRaw(history->peer->id, groupedId->v));
